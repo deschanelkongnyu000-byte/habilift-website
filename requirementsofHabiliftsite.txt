@@ -1,0 +1,1732 @@
+# HabiLift Website Redesign and Development Blueprint
+
+## 1. Project Vision
+
+### HabiLift: A Human First Mental Healthcare Ecosystem
+
+The new HabiLift website should communicate one central idea:
+
+> **Mental healthcare should feel connected, human, safe, and accessible.**
+
+The website should not feel like a technology company trying to sell a mental health product.
+
+It should feel like a **trusted place where people can understand their options, feel seen, discover support, and understand how HabiLift connects the people and institutions involved in care.**
+
+Technology should support the story rather than become the story.
+
+The website should therefore combine:
+
+* Human emotion
+* Trust
+* Safety
+* Hope
+* Professional credibility
+* Accessibility
+* Strong visual storytelling
+* Clear explanations
+* Realistic use cases
+* Strong ecosystem positioning
+* Institutional credibility
+* Conversion paths
+* Editorial content
+* Custom content management
+
+---
+
+# 2. Problems With the Current Website
+
+The current website contains many good concepts, but several elements compete for attention.
+
+### 2.1 Too much information too early
+
+The homepage introduces:
+
+* individuals
+* professionals
+* hospitals
+* schools
+* companies
+* NGOs
+* government
+* correctional facilities
+* families
+* AI
+* security
+* teletherapy
+* referrals
+* ecosystem
+* dashboards
+* statistics
+
+This makes HabiLift appear very broad before the visitor has emotionally connected with the central problem.
+
+### 2.2 The human story is too far down
+
+Mental healthcare is highly emotional.
+
+The visitor should encounter a feeling of:
+
+> “This understands what I or someone I care about may be going through.”
+
+before encountering large ecosystem statistics.
+
+### 2.3 The website looks more like a technology platform
+
+Terms such as:
+
+> “command centre”
+
+> “live capacity”
+
+> “outcome monitoring”
+
+> “AI pre-assessment”
+
+> “connected ecosystem”
+
+are useful, but too much of this language can make the product feel institutional and technical.
+
+HabiLift needs to show the **human outcome behind the technology.**
+
+### 2.4 The ecosystem is explained conceptually rather than visually
+
+The current ecosystem section tells users that everything is connected.
+
+The new site should **show them what that connection looks like.**
+
+For example:
+
+**Person → Habi → Specialist → Consultation → Care Plan → Referral → Hospital / Pharmacy → Continued Support**
+
+This should become an interactive visual story rather than simply a list of stakeholder categories.
+
+### 2.5 The site needs stronger differentiation between audiences
+
+A person looking for help should not have to mentally process the same information as:
+
+* a psychologist
+* a hospital
+* an NGO
+* a company
+* a school
+* a government institution
+
+The website should allow each visitor to quickly identify:
+
+> **“This is what HabiLift does for someone like me.”**
+
+---
+
+# 3. New Information Architecture
+
+The website should be reorganized around **people and journeys**, not around company features.
+
+## Primary Navigation
+
+### Home
+
+The emotional introduction and overall understanding of HabiLift.
+
+### How HabiLift Helps
+
+Explains the care journey visually.
+
+### For Individuals
+
+Patient focused experience.
+
+### For Professionals
+
+Specialist focused experience.
+
+### For Organizations
+
+A consolidated institutional gateway.
+
+### Community
+
+Human stories, educational content, discussions and resources.
+
+### About
+
+Company, mission, founder, story, team and values.
+
+### Resources
+
+Mental health education, guides, articles, videos and other useful content.
+
+### Contact
+
+Contact and consultation pathways.
+
+---
+
+# 4. Homepage Structure
+
+The homepage should follow a carefully designed emotional progression.
+
+## Section 01 — Hero
+
+Do not begin with:
+
+> “One connected ecosystem. One shared mission.”
+
+Instead, begin with the human problem.
+
+Possible direction:
+
+### Mental healthcare should never feel like something you have to navigate alone.
+
+Supporting text:
+
+> HabiLift connects people with trusted mental health professionals and brings the people and organizations involved in care closer together.
+
+Primary action:
+
+**Find Support**
+
+Secondary action:
+
+**See How HabiLift Works**
+
+### Visual Direction
+
+The hero should be highly visual.
+
+Rather than a generic dashboard screenshot, show a human centered scene or carefully art directed illustration representing connection, support and calm.
+
+The HabiLift visual identity should be immediately recognizable.
+
+---
+
+# 5. Emotional Connection Section
+
+Immediately after the hero, introduce relatable situations.
+
+## “Sometimes, asking for help is the hardest part.”
+
+Use a horizontal or card based storytelling experience.
+
+Examples:
+
+### “I don't know what I'm feeling.”
+
+Habi helps you begin with a private, guided conversation.
+
+### “I know I need someone to talk to.”
+
+Find a verified professional who fits your needs.
+
+### “I'm supporting someone I care about.”
+
+Understand how to support them and where professional help fits.
+
+### “Care shouldn't stop after one conversation.”
+
+HabiLift helps create continuity around ongoing care.
+
+This section creates emotional recognition before introducing technical features.
+
+---
+
+# 6. Meet Habi
+
+Habi should become a recognizable character and product experience rather than simply an AI feature.
+
+## Meet Habi
+
+### A gentle first step toward understanding what you need.
+
+Show an actual conversation interface.
+
+The visitor should see a short realistic interaction.
+
+For example:
+
+> “You don't have to have the right words. We can start with how you've been feeling lately.”
+
+Then show a few conversation stages.
+
+### Important positioning
+
+Habi should consistently be described as:
+
+**A care companion that supports the beginning of the journey.**
+
+Never position Habi as:
+
+* a therapist
+* a doctor
+* a replacement for professionals
+* an autonomous diagnostic system
+
+The human professional should remain central.
+
+---
+
+# 7. The HabiLift Journey
+
+This should become one of the most visually important sections on the website.
+
+## From “I need help” to “I'm not alone.”
+
+Create a large interactive journey:
+
+### 01
+
+**Start privately**
+
+Tell Habi what you are experiencing.
+
+↓
+
+### 02
+
+**Understand what you need**
+
+A structured pre assessment helps organize what you share.
+
+↓
+
+### 03
+
+**Meet the right professional**
+
+Discover or match with a verified specialist.
+
+↓
+
+### 04
+
+**Talk securely**
+
+Access consultation through app or browser.
+
+↓
+
+### 05
+
+**Build your care journey**
+
+Continue with appointments, communication, progress and care planning.
+
+↓
+
+### 06
+
+**Connect when more support is needed**
+
+Referrals and coordinated support can involve other professionals and institutions.
+
+The visual should make the journey understandable without requiring the visitor to read paragraphs.
+
+---
+
+# 8. “You Are Not One Thing”
+
+This section should introduce the ecosystem.
+
+Instead of immediately displaying seven stakeholder sectors, introduce the concept emotionally.
+
+## Mental healthcare involves more than one person.
+
+A person may interact with:
+
+**You**
+
+↓
+
+**Specialist**
+
+↓
+
+**Doctor**
+
+↓
+
+**Hospital**
+
+↓
+
+**Pharmacy**
+
+↓
+
+**Family**
+
+↓
+
+**Community**
+
+The website can then animate the relationships.
+
+This becomes HabiLift's signature visual.
+
+---
+
+# 9. The HabiLift Ecosystem
+
+After the emotional introduction, explain the larger ecosystem.
+
+## One connected care ecosystem
+
+Use an interactive ecosystem visualization.
+
+Central node:
+
+### HabiLift
+
+Surrounding nodes:
+
+* Individuals
+* Mental Health Professionals
+* Hospitals & Clinics
+* Pharmacies
+* Schools
+* Companies
+* NGOs
+* Families
+* Other institutions
+
+Clicking a node changes the explanation around it.
+
+This is substantially more memorable than a grid of eight cards.
+
+---
+
+# 10. Dedicated Audience Experiences
+
+Every audience should have a dedicated landing page.
+
+## Individuals
+
+### Your mental health journey starts with one step.
+
+Explain:
+
+* Private registration
+* Habi
+* Pre assessment
+* Specialist discovery
+* Booking
+* Secure consultations
+* Messaging
+* Mood and progress tracking
+* Community
+* Continued care
+
+CTA:
+
+**Start Your Journey**
+
+---
+
+## Professionals
+
+### Spend less time navigating fragmented care.
+
+Show:
+
+* Professional profile
+* Verification
+* Availability
+* Appointments
+* Patient relationships
+* Consultation
+* Notes
+* Care plans
+* Communication
+* Referrals
+* Progress information
+
+CTA:
+
+**Join HabiLift as a Professional**
+
+Use actual product interface visuals.
+
+---
+
+## Organizations
+
+Rather than creating separate top level pages immediately for every sector, create:
+
+### Mental healthcare works better when organizations can work together.
+
+Then provide pathways for:
+
+**Hospitals & Clinics**
+
+**Schools**
+
+**Companies**
+
+**NGOs**
+
+**Government**
+
+**Correctional Facilities**
+
+**Families**
+
+Each receives its own dedicated explanation.
+
+---
+
+# 11. Visual Storytelling Strategy
+
+The new website should use visuals deliberately.
+
+Not every section needs an image.
+
+Instead, every visual should answer one of three questions:
+
+### Does this help me understand?
+
+Use:
+
+* diagrams
+* product interfaces
+* journey maps
+* ecosystem visualizations
+
+### Does this help me feel?
+
+Use:
+
+* human photography
+* carefully directed lifestyle photography
+* empathetic illustrations
+* subtle motion
+
+### Does this help me trust?
+
+Use:
+
+* specialist profiles
+* verification indicators
+* security explanations
+* institutional imagery
+* real product interfaces
+* founder/team imagery
+* partnerships
+* credentials
+
+---
+
+# 12. Illustration Direction
+
+Avoid generic stock illustrations of people sitting on couches.
+
+Develop a distinctive HabiLift illustration language.
+
+Characteristics:
+
+* Human
+* Calm
+* Warm
+* Contemporary
+* Inclusive
+* Culturally believable
+* Subtle rather than childish
+* Minimal but expressive
+
+Illustrations can represent:
+
+* emotional states
+* conversations
+* connection
+* support
+* care journeys
+* community
+* institutions
+* transitions
+
+Illustrations should supplement photography rather than replace it completely.
+
+---
+
+# 13. Photography Direction
+
+Photography should feel authentic.
+
+Avoid overly staged:
+
+> “person smiling at laptop”
+
+stock imagery.
+
+Prioritize imagery showing:
+
+* genuine human connection
+* conversations
+* professionals listening
+* families
+* young people
+* African environments where appropriate
+* healthcare environments
+* professionals working
+* people using technology naturally
+
+HabiLift should visibly communicate that its roots are African while maintaining a global standard.
+
+---
+
+# 14. Trust Section
+
+Mental health requires an unusually strong trust layer.
+
+Create a dedicated section:
+
+## Your story deserves to be treated with care.
+
+Then visually explain:
+
+### Privacy
+
+What information is collected and why.
+
+### Security
+
+How information is protected.
+
+### Professional verification
+
+How specialists are verified.
+
+### Consent
+
+How information sharing works.
+
+### Human oversight
+
+Where Habi supports professionals rather than replacing them.
+
+Avoid simply saying:
+
+> “100% encrypted.”
+
+Trust requires explanation, not just badges.
+
+---
+
+# 15. Real People, Real Journeys
+
+The existing testimonials should evolve into a storytelling system.
+
+Instead of three short quotations, introduce:
+
+## Stories of finding a way forward.
+
+Possible story formats:
+
+### Individual Story
+
+A person's journey from uncertainty to receiving support.
+
+### Professional Story
+
+How a specialist uses HabiLift in practice.
+
+### Organization Story
+
+How an organization improves access or coordination.
+
+These can become CMS driven stories.
+
+---
+
+# 16. Community and Resources
+
+This should become a major content area rather than a footer feature.
+
+## HabiLift Community
+
+Possible categories:
+
+* Mental health education
+* Guides
+* Stories
+* Specialist sessions
+* Discussions
+* Videos
+* Audio
+* Practical resources
+
+The community should emphasize:
+
+**Support rather than popularity.**
+
+For example, interactions should feel more like:
+
+**Support**
+
+rather than:
+
+**Like**
+
+Anonymity and moderation should be designed into the experience.
+
+---
+
+# 17. “Learn Without Feeling Lectured”
+
+Mental health education should use visual storytelling.
+
+Instead of long medical articles only, provide:
+
+### Quick Guides
+
+“What can anxiety feel like?”
+
+### Visual Explainers
+
+“What happens during your first therapy session?”
+
+### Short Videos
+
+“Three things to know before talking to a specialist.”
+
+### Specialist Insights
+
+Short expert explanations.
+
+### Practical Tools
+
+Breathing, grounding, reflection and other appropriate supportive resources.
+
+This creates a reason to return to the website even when someone is not currently booking care.
+
+---
+
+# 18. About HabiLift
+
+The current founder story is powerful but should be redesigned.
+
+Do not bury it beneath generic company language.
+
+Create:
+
+## Why HabiLift exists
+
+Start with the human origin.
+
+Then:
+
+### The problem
+
+Fragmented mental healthcare.
+
+### The realization
+
+People need more connected support.
+
+### The vision
+
+A more connected mental healthcare ecosystem.
+
+### The people
+
+Founder and team.
+
+### The journey
+
+A visual timeline.
+
+This makes the company feel real rather than manufactured.
+
+---
+
+# 19. Founder Story
+
+The founder section can retain the existing story about Fondung Clifford Makong, but it should be presented visually.
+
+Possible structure:
+
+**2023**
+
+A personal loss raises a question.
+
+↓
+
+**Learning**
+
+Technology, web development, digital innovation and Special Education.
+
+↓
+
+**2025**
+
+HabiLift begins taking shape.
+
+↓
+
+**Today**
+
+Building a connected mental healthcare ecosystem.
+
+The existing story becomes a meaningful narrative rather than a paragraph surrounded by statistics.
+
+---
+
+# 20. Conversion Strategy
+
+The website should not have one generic CTA everywhere.
+
+Different visitors should receive different actions.
+
+## Individual
+
+**Start Your Journey**
+
+## Professional
+
+**Join HabiLift**
+
+## Hospital / Organization
+
+**Book a Consultation**
+
+## NGO
+
+**Explore Partnership**
+
+## General visitor
+
+**See How HabiLift Works**
+
+## Existing user
+
+**Open HabiLift**
+
+This makes the website more intelligent and less repetitive.
+
+---
+
+# 21. Footer
+
+The footer should become a secondary navigation system.
+
+### Individuals
+
+* Find Support
+* Meet Habi
+* Specialists
+* Community
+* Resources
+
+### Professionals
+
+* Join HabiLift
+* Professional Verification
+* Specialist Resources
+
+### Organizations
+
+* Hospitals
+* Schools
+* Companies
+* NGOs
+* Government
+* Facilities
+
+### Company
+
+* About
+* Founder
+* Careers
+* Contact
+* Partnerships
+
+### Trust
+
+* Privacy
+* Terms
+* Security
+* Consent
+* Safety
+
+---
+
+# 22. Custom CMS
+
+The CMS should be designed specifically for HabiLift rather than trying to imitate WordPress.
+
+The public website should be treated as a **content platform**, while the HabiLift application remains the actual care platform.
+
+The CMS should allow authorized administrators to manage website content without developer intervention.
+
+## CMS Dashboard
+
+### Dashboard
+
+Show:
+
+* Published content
+* Drafts
+* Pending review
+* Recent changes
+* Scheduled publications
+* Website activity
+
+---
+
+# 23. CMS Content Modules
+
+The CMS should manage:
+
+### Pages
+
+Create and edit website pages.
+
+### Hero Sections
+
+Manage:
+
+* heading
+* supporting text
+* CTA
+* background
+* media
+* animation configuration
+
+### Sections
+
+Sections should be reusable.
+
+Examples:
+
+* Text + image
+* Feature grid
+* Story section
+* Statistics
+* Testimonial
+* Ecosystem
+* Timeline
+* FAQ
+* CTA
+* Video
+* Gallery
+* Partner logos
+
+### Stories
+
+Manage real-world stories and testimonials.
+
+### Articles
+
+Mental health educational content.
+
+### Resources
+
+PDFs, videos, audio and downloadable materials.
+
+### Professionals
+
+Public professional profiles where appropriate.
+
+### Organizations
+
+Institutional profiles and case studies.
+
+### FAQs
+
+Manage questions and answers.
+
+### Media Library
+
+Central management for:
+
+* Images
+* Videos
+* Audio
+* Documents
+* Logos
+
+---
+
+# 24. CMS Page Builder
+
+Do not build a completely unrestricted drag and drop page builder.
+
+Instead, use a **structured section builder**.
+
+For example:
+
+**Page**
+
+→ Hero
+
+→ Introduction
+
+→ Feature section
+
+→ Image story
+
+→ Journey
+
+→ Testimonials
+
+→ CTA
+
+Each section has controlled fields.
+
+This keeps the website visually consistent while still giving administrators substantial control.
+
+---
+
+# 25. CMS Localization
+
+Since HabiLift supports EN/FR, multilingual content should be designed into the CMS from the beginning.
+
+Each content item should support:
+
+**English**
+
+and
+
+**French**
+
+with clear translation status.
+
+Administrators should be able to see:
+
+* English published
+* French draft
+* Translation missing
+* Both published
+
+Do not treat translation as an afterthought.
+
+---
+
+# 26. CMS Publishing Workflow
+
+The CMS should support:
+
+**Draft**
+
+↓
+
+**Review**
+
+↓
+
+**Approved**
+
+↓
+
+**Published**
+
+↓
+
+**Scheduled update / archive**
+
+This becomes particularly important once multiple people manage content.
+
+---
+
+# 27. CMS Permissions
+
+Different administrators should have different permissions.
+
+Example:
+
+### Super Admin
+
+Full access.
+
+### Content Manager
+
+Create/edit content.
+
+### Editor
+
+Review and publish.
+
+### Media Manager
+
+Manage media.
+
+### Translator
+
+Manage language versions.
+
+This should use proper role based access control.
+
+---
+
+# 28. Design System
+
+Before developing individual pages, establish the HabiLift design system.
+
+Define:
+
+### Typography
+
+* Display type
+* Heading hierarchy
+* Body
+* Captions
+* UI text
+
+### Colors
+
+Retain the recognizable HabiLift identity while refining:
+
+* Primary teal
+* Deep supporting tones
+* Background tones
+* Neutral surfaces
+* Text colors
+* Accent states
+* Success/warning/error states
+
+### Components
+
+Create reusable:
+
+* Buttons
+* Cards
+* Navigation
+* Inputs
+* Tags
+* Badges
+* Testimonials
+* Media blocks
+* Accordions
+* Modals
+* CTAs
+
+### Spacing
+
+Create a consistent spacing system.
+
+### Border radius
+
+Create consistent component shapes.
+
+### Shadows
+
+Use subtle depth rather than excessive effects.
+
+---
+
+# 29. Motion Design
+
+Animation should communicate, not decorate.
+
+Use motion for:
+
+### Connection
+
+Nodes gradually connect.
+
+### Journey
+
+A user moves through the care pathway.
+
+### Habi
+
+Subtle conversational animation.
+
+### Ecosystem
+
+Stakeholders respond to selection.
+
+### Statistics
+
+Numbers can reveal themselves as the visitor reaches them.
+
+### Page transitions
+
+Subtle transitions can make navigation feel cohesive.
+
+Avoid excessive:
+
+* bouncing
+* floating
+* parallax
+* spinning
+* particle effects
+
+Mental healthcare should feel calm.
+
+---
+
+# 30. Responsive Design
+
+The mobile experience should not simply be a collapsed desktop website.
+
+Design separately for:
+
+### Mobile
+
+Primary priority.
+
+### Tablet
+
+Intermediate layout.
+
+### Desktop
+
+Large visual storytelling.
+
+The website should remain usable under:
+
+* slow connections
+* smaller screens
+* accessibility settings
+* reduced motion preferences
+
+---
+
+# 31. Accessibility
+
+Accessibility should be part of the architecture.
+
+Include:
+
+* semantic HTML
+* keyboard navigation
+* proper contrast
+* alt text
+* accessible forms
+* screen reader support
+* focus states
+* reduced motion
+* readable typography
+* meaningful headings
+* accessible video controls
+
+Mental healthcare websites especially need to avoid creating unnecessary cognitive load.
+
+---
+
+# 32. Performance
+
+The visual richness must not produce a slow website.
+
+Use:
+
+* optimized images
+* responsive image sizes
+* modern image formats
+* lazy loading
+* optimized fonts
+* code splitting
+* minimal JavaScript where unnecessary
+* compressed video
+* CDN delivery
+* caching
+
+The design should be visually rich **without becoming heavy.**
+
+---
+
+# 33. Technical Architecture
+
+The website should be developed as a modern custom application.
+
+### Frontend
+
+A modern component based framework.
+
+### Backend
+
+A dedicated CMS/API backend.
+
+### Database
+
+Structured relational database.
+
+### Media
+
+Dedicated media storage and optimization.
+
+### Authentication
+
+Secure administrator authentication.
+
+### API
+
+Structured API between CMS and public website.
+
+### Deployment
+
+Separate environments:
+
+**Development**
+
+→ **Staging**
+
+→ **Production**
+
+No WordPress.
+
+The website CMS and the HabiLift care application should also have clearly separated responsibilities.
+
+---
+
+# 34. Important Architectural Separation
+
+The public website should not become the patient application.
+
+### Public Website
+
+Responsible for:
+
+* Brand
+* Information
+* Education
+* Marketing
+* Stories
+* Resources
+* Public professional information
+* Organization information
+* Conversion
+
+### HabiLift Application
+
+Responsible for:
+
+* Patient accounts
+* Specialist accounts
+* Appointments
+* Consultations
+* Messaging
+* Care information
+* Assessments
+* Community functionality
+* Clinical workflows
+
+### CMS
+
+Responsible for:
+
+* Website content
+* Articles
+* Stories
+* Pages
+* Media
+* FAQs
+* Public resources
+* Marketing sections
+
+This separation is important for security, maintainability and future growth.
+
+---
+
+# 35. Development Phases
+
+## Phase 1 — Discovery
+
+Document:
+
+* Target audiences
+* Business objectives
+* Existing brand
+* Existing website
+* Application capabilities
+* Content inventory
+* Competitor/reference analysis
+* Regulatory and trust considerations
+
+Deliverable:
+
+**HabiLift Website Product Brief**
+
+---
+
+## Phase 2 — Information Architecture
+
+Create:
+
+* Sitemap
+* Audience journeys
+* Navigation
+* Page hierarchy
+* CTA strategy
+* Content hierarchy
+
+Deliverable:
+
+**HabiLift Website Information Architecture**
+
+---
+
+## Phase 3 — UX Design
+
+Create wireframes for:
+
+* Homepage
+* Individual page
+* Professional page
+* Organization page
+* How It Works
+* Ecosystem
+* Community
+* Resources
+* About
+* Contact
+
+Focus on content hierarchy before visual styling.
+
+---
+
+## Phase 4 — Visual Design
+
+Develop:
+
+* Design system
+* Typography
+* Colors
+* Components
+* Photography direction
+* Illustration direction
+* Motion language
+* Iconography
+
+Then produce high fidelity designs.
+
+---
+
+## Phase 5 — Prototype
+
+Build an interactive prototype demonstrating:
+
+* Navigation
+* Hero
+* Habi interaction
+* Care journey
+* Ecosystem
+* Audience switching
+* Motion
+
+This should be tested before full development.
+
+---
+
+# 36. CMS Development
+
+Build the CMS around the approved design system.
+
+Implement:
+
+* Authentication
+* Roles
+* Pages
+* Sections
+* Media
+* Articles
+* Stories
+* Resources
+* Testimonials
+* FAQs
+* Organizations
+* Professionals
+* Languages
+* Publishing workflow
+
+---
+
+# 37. Frontend Development
+
+Build reusable components rather than individual page specific implementations.
+
+For example:
+
+`HeroSection`
+
+`StorySection`
+
+`JourneySection`
+
+`EcosystemSection`
+
+`FeatureGrid`
+
+`TestimonialSection`
+
+`ResourceGrid`
+
+`AudienceSelector`
+
+`CTASection`
+
+This makes future CMS controlled content much easier to manage.
+
+---
+
+# 38. Integration
+
+Connect:
+
+**Public Website**
+
+↓
+
+**CMS API**
+
+↓
+
+**CMS Database**
+
+and where appropriate:
+
+**Public Website**
+
+↓
+
+**HabiLift Application**
+
+for actions such as:
+
+* Start journey
+* Open application
+* Professional registration
+* Organization registration
+* Booking consultation
+
+The website should never expose sensitive application data.
+
+---
+
+# 39. Content Production
+
+Content should be produced alongside development.
+
+Required content categories:
+
+### Brand
+
+* Mission
+* Vision
+* Values
+* Founder story
+
+### Individual
+
+* Mental health journey
+* Habi
+* Specialist discovery
+* Consultation
+* Community
+
+### Professional
+
+* Joining
+* Verification
+* Platform benefits
+* Workflow
+
+### Organization
+
+* Hospitals
+* Schools
+* Companies
+* NGOs
+* Government
+* Facilities
+
+### Education
+
+* Articles
+* Guides
+* Videos
+* Audio
+* FAQs
+
+### Trust
+
+* Privacy
+* Security
+* Consent
+* Professional verification
+* Safety
+
+---
+
+# 40. Testing
+
+Testing should cover more than whether pages load.
+
+### UX testing
+
+Can a visitor understand:
+
+* What HabiLift is?
+* Who it is for?
+* What happens after clicking Get Started?
+* How Habi works?
+* How professionals are involved?
+* Why HabiLift is trustworthy?
+
+### Technical testing
+
+* Mobile
+* Tablet
+* Desktop
+* Browser compatibility
+* Performance
+* Accessibility
+* CMS functionality
+* API integration
+* Authentication
+* Security
+* Media handling
+
+---
+
+# 41. Launch Structure
+
+Before launch:
+
+### Content
+
+All pages reviewed.
+
+### Translation
+
+English and French verified.
+
+### CMS
+
+Editors trained.
+
+### Performance
+
+Core pages optimized.
+
+### Security
+
+CMS and API audited.
+
+### Analytics
+
+Privacy conscious analytics configured.
+
+### SEO
+
+Metadata, structured data, sitemap and indexing configured.
+
+### Monitoring
+
+Errors and uptime monitored.
+
+---
+
+# 42. The New Homepage in One Sentence
+
+The visitor's emotional journey should be:
+
+> **“I feel understood.”**
+
+↓
+
+> **“I understand what HabiLift is.”**
+
+↓
+
+> **“I can see how it could help.”**
+
+↓
+
+> **“I understand that real professionals are involved.”**
+
+↓
+
+> **“I trust how my information is handled.”**
+
+↓
+
+> **“I can see where I fit in the ecosystem.”**
+
+↓
+
+> **“I know exactly what to do next.”**
+
+That should be the foundation of the entire redesign.
+
+---
+
+# 43. Final Product Direction
+
+The new HabiLift website should feel like a combination of:
+
+**A trusted mental health organization**
+
+*
+
+**A modern healthcare platform**
+
+*
+
+**A human centered digital product**
+
+*
+
+**A credible technology company**
+
+*
+
+**A mental health education resource**
+
+It should not feel like a conventional SaaS landing page.
+
+The strongest visual and structural principle should be:
+
+> **People first. Care second. Technology in service of both.**
+
+The website should make visitors understand that HabiLift is not simply an app for booking a therapist.
+
+It is building a connected environment around mental healthcare, while keeping the individual and the human professional at the center.
+
+---
+
+# 44. Recommended Development Deliverables
+
+The complete project should produce the following:
+
+1. HabiLift Website Product Brief
+2. Audience and User Journey Map
+3. Information Architecture
+4. Sitemap
+5. Content Architecture
+6. UX Wireframes
+7. HabiLift Web Design System
+8. High Fidelity UI Designs
+9. Illustration and Photography Direction
+10. Motion Design Specification
+11. Responsive Design Specification
+12. Accessibility Specification
+13. CMS Architecture
+14. CMS Data Model
+15. CMS Admin Interface
+16. Public Website Frontend
+17. CMS Backend/API
+18. Media Management System
+19. EN/FR Localization System
+20. Publishing Workflow
+21. SEO Architecture
+22. Analytics Architecture
+23. Security Specification
+24. Performance Optimization
+25. Testing Plan
+26. Deployment Configuration
+27. CMS Administrator Documentation
+28. Website Content
+29. Launch Checklist
+30. Post Launch Improvement Roadmap
+
+# 45. Core Principle
+
+The redesign should not be:
+
+**“Let's make the current HabiLift website look better.”**
+
+It should be:
+
+**“Let's design the digital front door to an entire mental healthcare ecosystem.”**
+
+That difference should guide every design and development decision.

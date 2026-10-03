@@ -1,0 +1,708 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8f4">
+  <meta name="description" content="Mental healthcare should never feel like something you have to navigate alone. Find thoughtful support with HabiLift.">
+  <title>HabiLift — Care that moves with you</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400..600;1,400..600&family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400..800;1,400..800&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner wrap">
+      <a class="brand" href="index.html" aria-label="HabiLift home"><img src="logo.png" alt="HabiLift logo" class="brand-logo" id="site-logo"></a>
+      <div class="header-group">
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span class="sr-only">Toggle navigation</span></button>
+        <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+          <a href="index.html" class="nav-home" data-i18n="nav_home">Home</a>
+          <div class="nav-dropdown">
+            <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="explore-menu"><span data-i18n="nav_explore">Explore HabiLift</span> <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+            <div class="nav-submenu" id="explore-menu">
+              <a href="?page=how-it-works" data-i18n="nav_how_it_helps">How it helps</a>
+              <a href="?page=meet-habi" data-i18n="nav_meet_habi">Meet Habi</a>
+              <a href="index.html#reviews" data-i18n="nav_stories">Stories &amp; Reviews</a>
+              <a href="?page=individuals" data-i18n="nav_individuals">For individuals</a>
+              <a href="?page=professionals" data-i18n="nav_professionals">For professionals</a>
+              <a href="?page=organizations" data-i18n="nav_organizations">For organizations</a>
+              <a href="?page=community" data-i18n="nav_community">Community</a>
+              <a href="?page=resources" data-i18n="nav_resources">Resources</a>
+            </div>
+          </div>
+          <a href="?page=about" data-i18n="nav_about">About us</a>
+          <a href="?page=news-events" data-i18n="nav_news">News &amp; events</a>
+          <a href="?page=blog" data-i18n="nav_blog">Blog</a>
+          <a class="nav-cta" href="?page=contact"><span data-i18n="nav_contact">Contact us</span> <span aria-hidden="true"><i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
+        </nav>
+        
+        <div class="header-utilities">
+          <div class="lang-switch" role="group" aria-label="Language selector">
+            <button type="button" class="lang-btn is-active" data-lang="en" aria-pressed="true">EN</button>
+            <span class="lang-sep" aria-hidden="true">/</span>
+            <button type="button" class="lang-btn" data-lang="fr" aria-pressed="false">FR</button>
+          </div>
+          <button type="button" class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle theme mode" title="Toggle dark / light theme">
+            <span class="theme-icon-slot">
+              <i class="fa-solid fa-moon icon-moon" aria-hidden="true"></i>
+              <i class="fa-solid fa-sun icon-sun" aria-hidden="true"></i>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="home-page">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-spotlight" aria-hidden="true"></div>
+      <div id="hero-background-particles" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> <span data-i18n="hero_eyebrow">A more human way to find support</span></p>
+        <h1 id="hero-title" data-i18n="hero_title">You don’t have to figure it all out <em>alone.</em></h1>
+        <p class="hero-lede" data-i18n="hero_lede">When you’re ready, HabiLift helps you find a place to start—and brings trusted people closer to your care.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="?page=individuals"><span data-i18n="hero_cta_find">Find your next step</span> <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#journey"><span data-i18n="hero_cta_see">See how it works</span> <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-note">
+          <span class="note-icon" aria-hidden="true"><i class="fa-solid fa-heart"></i></span>
+          <span data-i18n="hero_note">A gentle first step. Real professionals when you need them.</span>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Mental health professionals sharing a warm, welcoming moment">
+        <div class="hero-shape-backdrop" aria-hidden="true"></div>
+        <div class="hero-photo" aria-label="HabiLift stories of support and connection">
+          <img class="hero-slide is-active" src="heroslidingimages/hero_breath_clean.jpg" alt="A young African woman pauses in a calm, sunlit room, taking a gentle breath with her hands over her heart." fetchpriority="high" data-caption="Some days, taking a breath" data-caption-em="is a brave beginning." data-caption-fr="Certains jours, respirer calmement" data-caption-em-fr="est un courageux début.">
+          <img class="hero-slide" src="heroslidingimages/hero_specialists_clean.jpg" alt="A mental health professional and colleague review care notes together in a warm, collaborative room." loading="lazy" data-caption="You deserve to be heard" data-caption-em="and supported by people." data-caption-fr="Vous méritez d’être écouté(e)" data-caption-em-fr="et entouré(e) avec soin.">
+          <img class="hero-slide" src="heroslidingimages/Prefend%20Prefend.jpg" alt="Two healthcare professionals share a warm smile, reflecting the reassurance of compassionate human support." loading="lazy" data-caption="Care moves forward" data-caption-em="one connection at a time." data-caption-fr="Le soin progresse" data-caption-em-fr="un lien bienveillant à la fois.">
+          <img class="hero-slide" src="heroslidingimages/hero_counselor.jpg" alt="A compassionate counselor smiling gently in a bright therapy room." loading="lazy" data-caption="Safe conversations begin" data-caption-em="with genuine understanding." data-caption-fr="Les échanges sereins débutent" data-caption-em-fr="par une écoute sincère.">
+          <img class="hero-slide" src="heroslidingimages/hero_mindful.jpg" alt="A young man practicing mindful breathing in a sunlit garden." loading="lazy" data-caption="Every small step forward" data-caption-em="creates room for healing." data-caption-fr="Chaque petit pas en avant" data-caption-em-fr="ouvre la voie à l'apaisement.">
+          <img class="hero-slide" src="heroslidingimages/hero_consultation.jpg" alt="A specialist and client engaged in a supportive therapy session." loading="lazy" data-caption="Find a trusted person" data-caption-em="who truly listens." data-caption-fr="Trouvez une personne de confiance" data-caption-em-fr="qui vous écoute vraiment.">
+          <img class="hero-slide" src="heroslidingimages/hero_support.jpg" alt="Two loved ones comforting each other with genuine compassion." loading="lazy" data-caption="You never have to carry" data-caption-em="everything on your own." data-caption-fr="Vous n’avez plus à porter" data-caption-em-fr="tout le poids en solitaire.">
+        </div>
+        <div class="visual-label">
+          <span class="label-spark" aria-hidden="true"><i class="fa-solid fa-people-arrows-left-right"></i></span>
+          <span><strong data-i18n="visual_label_title">Care feels closer</strong><small data-i18n="visual_label_subtitle">One thoughtful step at a time</small></span>
+        </div>
+        <div class="visual-caption" aria-live="off"><span class="caption-line">Some days, taking a breath</span><br><em class="caption-em">is a brave beginning.</em></div>
+        <div class="hero-carousel-controls" role="group" aria-label="Choose a HabiLift story image">
+          <button class="carousel-dot is-active" type="button" aria-label="Show story 1: A brave beginning" aria-pressed="true"></button>
+          <button class="carousel-dot" type="button" aria-label="Show story 2: Thoughtful care" aria-pressed="false"></button>
+          <button class="carousel-dot" type="button" aria-label="Show story 3: Human connection" aria-pressed="false"></button>
+          <button class="carousel-dot" type="button" aria-label="Show story 4: Compassionate counselor" aria-pressed="false"></button>
+          <button class="carousel-dot" type="button" aria-label="Show story 5: Mindfulness in nature" aria-pressed="false"></button>
+          <button class="carousel-dot" type="button" aria-label="Show story 6: Trusted consultation" aria-pressed="false"></button>
+          <button class="carousel-dot" type="button" aria-label="Show story 7: Caring connection" aria-pressed="false"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="reach-section" aria-label="HabiLift reach and connected care"><div class="wrap reach-grid">
+      <div class="reach-item"><strong data-count="54">54</strong><span data-i18n="reach_nations">Nations across<br>our reach</span></div>
+      <div class="reach-item"><strong data-count="12" data-suffix="+">12+</strong><span data-i18n="reach_categories">Specialist<br>categories</span></div>
+      <div class="reach-item"><strong data-count="7">7</strong><span data-i18n="reach_sectors">Stakeholder sectors<br>connected</span></div>
+      <div class="reach-item"><strong data-count="100" data-suffix="%">100%</strong><span data-i18n="reach_encrypted">Encrypted, verified<br>care</span></div>
+    </div></section>
+
+    <section class="recognition section-pad" aria-labelledby="recognition-title">
+      <div class="wrap">
+        <div class="section-heading centered">
+          <p class="eyebrow" data-i18n="recog_eyebrow">Wherever you’re starting</p>
+          <h2 id="recognition-title" data-i18n="recog_title">There’s no one right way<br>to ask for support.</h2>
+          <p data-i18n="recog_desc">Some days you have the words. Some days you just know something feels off. Either way, you can begin here.</p>
+        </div>
+        <div class="recognition-grid">
+          <article class="recognition-card">
+            <div class="recognition-image-wrap">
+              <img src="assets/recognition_reflect.jpg" alt="A person gently pausing with tea and a notebook in a calm room" class="recognition-img" loading="lazy">
+              <span class="card-number">01</span>
+            </div>
+            <div class="recognition-content">
+              <span class="card-symbol symbol-blue" aria-hidden="true"><i class="fa-regular fa-comment-dots"></i></span>
+              <h3 data-i18n="recog_card1_title">“I’m not sure what I’m feeling.”</h3>
+              <p data-i18n="recog_card1_desc">Start with a private, gentle conversation. You don’t need to have it all figured out first.</p>
+              <a href="?page=meet-habi" class="arrow-link"><span data-i18n="recog_card1_link">Meet Habi</span> <span aria-hidden="true"><i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
+            </div>
+          </article>
+          <article class="recognition-card">
+            <div class="recognition-image-wrap">
+              <img src="assets/recognition_specialist.jpg" alt="A compassionate therapist listening in a warm consultation session" class="recognition-img" loading="lazy">
+              <span class="card-number">02</span>
+            </div>
+            <div class="recognition-content">
+              <span class="card-symbol symbol-teal" aria-hidden="true"><i class="fa-solid fa-user-doctor"></i></span>
+              <h3 data-i18n="recog_card2_title">“I think I need to talk to someone.”</h3>
+              <p data-i18n="recog_card2_desc">Explore trusted mental health professionals and find a person who feels right for you.</p>
+              <a href="?page=professionals" class="arrow-link"><span data-i18n="recog_card2_link">Find a professional</span> <span aria-hidden="true"><i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
+            </div>
+          </article>
+          <article class="recognition-card">
+            <div class="recognition-image-wrap">
+              <img src="assets/recognition_support.jpg" alt="Two people comforting each other with genuine empathy" class="recognition-img" loading="lazy">
+              <span class="card-number">03</span>
+            </div>
+            <div class="recognition-content">
+              <span class="card-symbol symbol-bronze" aria-hidden="true"><i class="fa-solid fa-hand-holding-heart"></i></span>
+              <h3 data-i18n="recog_card3_title">“Someone I love needs support.”</h3>
+              <p data-i18n="recog_card3_desc">Learn about the care options around you, and how to be there for someone you care about.</p>
+              <a href="?page=community" class="arrow-link"><span data-i18n="recog_card3_link">Explore support</span> <span aria-hidden="true"><i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why HabiLift Split Visual Showcase Section -->
+    <section class="why-section section-pad" aria-labelledby="why-title">
+      <div class="wrap why-layout">
+        <!-- Left Visual Showcase Image -->
+        <div class="why-visual">
+          <div class="why-image-holder">
+            <div class="why-shape-backdrop" aria-hidden="true"></div>
+            <img src="assets/why_connected_care.jpg" alt="Mental health specialists collaborating thoughtfully on care plans" class="why-image" loading="lazy">
+          </div>
+          <div class="why-floating-card">
+            <span class="why-floating-icon" aria-hidden="true"><i class="fa-solid fa-circle-nodes"></i></span>
+            <div class="why-floating-text">
+              <strong data-i18n="why_float_title">Connected Ecosystem</strong>
+              <small data-i18n="why_float_sub">People · Specialists · Institutions</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Copy & 4 Key Pillar Cards -->
+        <div class="why-content">
+          <div class="why-heading">
+            <p class="eyebrow"><span class="eyebrow-dot"></span> <span data-i18n="why_eyebrow">Why HabiLift</span></p>
+            <h2 id="why-title" data-i18n="why_title">Built for the reality<br>of <em>fragmented care.</em></h2>
+            <p class="why-lede" data-i18n="why_lede">Mental healthcare has long been divided into isolated silos. HabiLift builds a unified bridge where individuals, verified professionals, and organizations work together seamlessly.</p>
+          </div>
+          
+          <div class="why-grid">
+            <article class="why-card">
+              <span class="why-icon why-teal"><i class="fa-solid fa-earth-africa" aria-hidden="true"></i></span>
+              <div class="why-card-text">
+                <h3 data-i18n="why_card1_title">Holistic ecosystem</h3>
+                <p data-i18n="why_card1_desc">Connecting individuals, verified specialists, and organizations in one unified circle.</p>
+              </div>
+            </article>
+            <article class="why-card">
+              <span class="why-icon why-blue"><i class="fa-solid fa-user-shield" aria-hidden="true"></i></span>
+              <div class="why-card-text">
+                <h3 data-i18n="why_card2_title">Verified professionals</h3>
+                <p data-i18n="why_card2_desc">Every specialist is credential-checked and badged before conversations begin.</p>
+              </div>
+            </article>
+            <article class="why-card">
+              <span class="why-icon why-bronze"><i class="fa-solid fa-lock" aria-hidden="true"></i></span>
+              <div class="why-card-text">
+                <h3 data-i18n="why_card3_title">Security &amp; trust</h3>
+                <p data-i18n="why_card3_desc">Private, encrypted sessions and consent-first data protection at every step.</p>
+              </div>
+            </article>
+            <article class="why-card">
+              <span class="why-icon why-storm"><i class="fa-solid fa-book-open-reader" aria-hidden="true"></i></span>
+              <div class="why-card-text">
+                <h3 data-i18n="why_card4_title">Education &amp; prevention</h3>
+                <p data-i18n="why_card4_desc">Proactive mental wellness guidance alongside access to personalized care.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="why-action-wrap">
+            <a class="arrow-link" href="?page=how-it-works"><span data-i18n="why_cta_link">See how HabiLift connects the ecosystem</span> <span aria-hidden="true"><i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="habi-ai-section section-pad" aria-labelledby="habi-title">
+      <div class="wrap habi-ai-layout">
+        <div class="habi-ai-copy">
+          <p class="eyebrow" data-i18n="habi_eyebrow">Meet Habi · AI technology</p>
+          <h2 id="habi-title" data-i18n="habi_title">Intelligence that supports care, <em>not replaces it.</em></h2>
+          <p data-i18n="habi_desc">Habi listens first. It guides a gentle, structured pre-assessment, surfaces what matters, and hands a clearer picture to a verified human specialist—so the first session can start with understanding.</p>
+          <ul class="habi-benefits">
+            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i><span data-i18n="habi_b1">Structured pre-assessment that respects dignity and pace</span></li>
+            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i><span data-i18n="habi_b2">Smart matching to the right specialist, faster</span></li>
+            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i><span data-i18n="habi_b3">Always human-in-the-loop—Habi never diagnoses alone</span></li>
+          </ul>
+          <a class="button button-dark" href="?page=meet-habi"><span data-i18n="habi_cta">Meet Habi</span> <span aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span></a>
+        </div>
+        <article class="habi-chat" aria-label="Preview of Habi's confidential pre-assessment conversation">
+          <div class="chat-top">
+            <div class="chat-brand">
+              <span class="chat-habi-mark">h</span>
+              <span><strong data-i18n="chat_brand_title">Habi — Pre-assessment</strong><small data-i18n="chat_brand_sub">Private support, at your pace</small></span>
+            </div>
+            <span class="confidential"><i class="fa-solid fa-lock" aria-hidden="true"></i> <span data-i18n="chat_confidential">Confidential · encrypted</span></span>
+          </div>
+          <div class="chat-progress"><span data-i18n="chat_step">Step 2 of 4</span><div><i></i></div></div>
+          <div class="chat-thread">
+            <p class="chat-question" data-i18n="chat_q">On most days lately, how would you say your energy has been?</p>
+            <p class="chat-answer" data-i18n="chat_a">Low, and mornings are the hardest.</p>
+            <div class="chat-habi-reply">
+              <span class="chat-habi-icon">h</span>
+              <p data-i18n="chat_reply">Thank you for sharing that. Mornings being heavy is something a lot of people carry quietly. I’ll note this for your specialist—is sleep part of it too?</p>
+            </div>
+          </div>
+          <form class="chat-input" action="#" onsubmit="return false">
+            <label class="sr-only" for="habi-response">Your answer</label>
+            <input id="habi-response" type="text" placeholder="Type your answer…" autocomplete="off" data-i18n-placeholder="chat_placeholder">
+            <button type="button" aria-label="Continue conversation"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
+          </form>
+          <p class="chat-safety"><i class="fa-solid fa-shield-heart" aria-hidden="true"></i> <span data-i18n="chat_safety">Habi supports the conversation. A qualified professional provides care.</span></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="journey section-pad" id="journey" aria-labelledby="journey-title">
+      <div class="wrap">
+        <div class="journey-intro">
+          <div>
+            <p class="eyebrow" data-i18n="journey_eyebrow">A path that moves with you</p>
+            <h2 id="journey-title" data-i18n="journey_title">From “I need help”<br>to “I’m not alone.”</h2>
+          </div>
+          <p data-i18n="journey_desc">Care isn’t one moment. HabiLift helps bring the right people and steps closer together, at your pace.</p>
+        </div>
+        <div class="journey-steps">
+          <article class="journey-step">
+            <span>01</span>
+            <div class="step-icon"><i class="fa-solid fa-lock"></i></div>
+            <h3 data-i18n="step1_title">Start privately</h3>
+            <p data-i18n="step1_desc">Share what’s on your mind in a supportive space.</p>
+          </article>
+          <article class="journey-step">
+            <span>02</span>
+            <div class="step-icon"><i class="fa-solid fa-compass"></i></div>
+            <h3 data-i18n="step2_title">Find your footing</h3>
+            <p data-i18n="step2_desc">Make sense of what you need, one step at a time.</p>
+          </article>
+          <article class="journey-step">
+            <span>03</span>
+            <div class="step-icon"><i class="fa-solid fa-user-doctor"></i></div>
+            <h3 data-i18n="step3_title">Meet a professional</h3>
+            <p data-i18n="step3_desc">Explore trusted specialists who can support you.</p>
+          </article>
+          <article class="journey-step">
+            <span>04</span>
+            <div class="step-icon"><i class="fa-solid fa-arrows-spin"></i></div>
+            <h3 data-i18n="step4_title">Keep moving forward</h3>
+            <p data-i18n="step4_desc">Build a care journey with continuity and connection.</p>
+          </article>
+        </div>
+        <div class="journey-link-wrap">
+          <a class="arrow-link" href="?page=how-it-works"><span data-i18n="journey_link">Explore the HabiLift journey</span> <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="ecosystem section-pad" aria-labelledby="ecosystem-title">
+      <div class="wrap ecosystem-layout">
+        <div class="ecosystem-copy">
+          <p class="eyebrow" data-i18n="eco_eyebrow">Care is a circle, not a straight line</p>
+          <h2 id="ecosystem-title" data-i18n="eco_title">Because support<br>takes <em>all of us.</em></h2>
+          <p data-i18n="eco_desc">Good mental healthcare can involve a person, a professional, family, and the wider community. HabiLift is building a more connected way for those relationships to support care.</p>
+          <a class="button button-light" href="?page=organizations"><span data-i18n="eco_cta">Explore the ecosystem</span> <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="ecosystem-map" aria-label="HabiLift connects people, professionals, families, and communities">
+          <div id="particles-js" aria-hidden="true"></div>
+          <div class="map-ring ring-a"></div>
+          <div class="map-ring ring-b"></div>
+          <div class="map-center"><span class="map-center-wordmark">HabiLift</span></div>
+          <div class="map-node node-person"><i class="fa-solid fa-user" aria-hidden="true"></i><span data-i18n="node_people">People</span></div>
+          <div class="map-node node-pro"><i class="fa-solid fa-user-doctor" aria-hidden="true"></i><span data-i18n="node_professionals">Professionals</span></div>
+          <div class="map-node node-family"><i class="fa-solid fa-people-group" aria-hidden="true"></i><span data-i18n="node_families">Families</span></div>
+          <div class="map-node node-community"><i class="fa-solid fa-house-chimney" aria-hidden="true"></i><span data-i18n="node_community">Community</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="founder-section section-pad" aria-labelledby="founder-title">
+      <div class="wrap founder-layout">
+        <figure class="founder-photo">
+          <img class="founder-image" src="assets/habilift_founder.webp" alt="HabiLift founder Fondung Clifford Makong working on a laptop at a table in Buea, Cameroon." loading="lazy">
+          <figcaption class="founder-photo-badge">
+            <span class="photo-badge-icon" aria-hidden="true"><i class="fa-solid fa-user-check"></i></span>
+            <div class="photo-badge-text">
+              <strong>Fondung Clifford Makong</strong>
+              <small data-i18n="founder_caption">Founder · Buea, Cameroon</small>
+            </div>
+          </figcaption>
+        </figure>
+        <div class="founder-copy">
+          <p class="eyebrow" data-i18n="founder_eyebrow">The story behind HabiLift</p>
+          <h2 id="founder-title" data-i18n="founder_title">Born from loss.<br><em>Built for connection.</em></h2>
+          
+          <div class="founder-identity-card">
+            <div class="founder-identity-avatar" aria-hidden="true">
+              <span class="founder-avatar-initials">FM</span>
+              <span class="founder-online-dot"></span>
+            </div>
+            <div class="founder-identity-details">
+              <div class="founder-name-line">
+                <h3 class="founder-name">Fondung Clifford Makong</h3>
+                <span class="founder-badge"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> <span data-i18n="founder_badge_verified">Founder</span></span>
+              </div>
+              <p class="founder-role"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <span data-i18n="founder_role">Founder · Buea, Cameroon</span></p>
+            </div>
+          </div>
+
+          <blockquote data-i18n="founder_quote">“Meaningful change in mental health requires connected systems—not isolated solutions.”</blockquote>
+          <p data-i18n="founder_p1">In 2023, the loss of a close family friend who struggled with depression and died by suicide became a defining moment. It raised a question that would shape his vision: What if the right professional had been accessible at the right time?</p>
+          <p data-i18n="founder_p2">Driven by this experience, Fondung spent the following years developing his skills in web development, technology, and digital innovation at Jongo Hub in Buea. In 2025, he brought his experience in Special Education and technology together to create HabiLift—a connected ecosystem designed to bridge gaps between individuals, professionals, institutions, and mental health services.</p>
+          <p class="founder-signoff" data-i18n="founder_signoff">Born from loss. Shaped by experience. Built through technology.</p>
+          <a class="arrow-link" href="?page=about"><span data-i18n="founder_link">More about HabiLift</span> <span aria-hidden="true"><i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Reviews & Stories Section -->
+    <section class="stories-section section-pad" id="reviews" aria-labelledby="stories-title">
+      <div class="wrap">
+        <!-- Section Header with Trust Metrics -->
+        <div class="stories-header">
+          <div class="stories-intro">
+            <p class="eyebrow"><span class="eyebrow-dot"></span> <span data-i18n="stories_eyebrow">Real People · Real Journeys</span></p>
+            <h2 id="stories-title" data-i18n="stories_title">Stories of finding<br>a <em>way forward.</em></h2>
+            <p class="stories-lede" data-i18n="stories_lede">Mental healthcare is deeply personal. Explore authentic experiences from people finding clarity, specialists delivering care, and institutions creating safe spaces.</p>
+          </div>
+          
+          <div class="stories-trust-card" aria-label="HabiLift Community Rating and Trust Signals">
+            <div class="trust-stat-score">
+              <span class="score-number">4.9</span>
+              <div class="score-stars" aria-label="4.9 out of 5 rating">
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                <i class="fa-solid fa-star-half-stroke" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="trust-stat-details">
+              <strong data-i18n="trust_stat_rating">98.4% Client Satisfaction</strong>
+              <span><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> <span data-i18n="trust_stat_badge">100% Verified Specialists &amp; Private Care</span></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="stories-filter-bar">
+          <div class="stories-tabs" role="tablist" aria-label="Filter stories by participant type">
+            <button class="story-tab is-active" role="tab" aria-selected="true" data-filter="all" id="tab-all"><i class="fa-solid fa-border-all" aria-hidden="true"></i> <span data-i18n="tab_all">All Experiences</span> <span class="tab-count">6</span></button>
+            <button class="story-tab" role="tab" aria-selected="false" data-filter="individuals" id="tab-individuals"><i class="fa-regular fa-user" aria-hidden="true"></i> <span data-i18n="tab_indiv">Individuals &amp; Families</span> <span class="tab-count">2</span></button>
+            <button class="story-tab" role="tab" aria-selected="false" data-filter="professionals" id="tab-professionals"><i class="fa-solid fa-user-doctor" aria-hidden="true"></i> <span data-i18n="tab_pros">Mental Health Specialists</span> <span class="tab-count">2</span></button>
+            <button class="story-tab" role="tab" aria-selected="false" data-filter="organizations" id="tab-organizations"><i class="fa-solid fa-building-columns" aria-hidden="true"></i> <span data-i18n="tab_orgs">Schools &amp; Institutions</span> <span class="tab-count">2</span></button>
+          </div>
+          
+          <div class="stories-nav-arrows" aria-label="Carousel navigation">
+            <button class="slider-arrow prev-arrow" type="button" aria-label="Previous story"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
+            <button class="slider-arrow next-arrow" type="button" aria-label="Next story"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+          </div>
+        </div>
+
+        <!-- Stories Grid / Track -->
+        <div class="stories-viewport">
+          <div class="stories-track">
+            
+            <!-- Story 1: Individual -->
+            <article class="story-card" data-category="individuals" data-id="story-1">
+              <div class="story-top">
+                <span class="story-topic-badge topic-teal"><i class="fa-solid fa-seedling" aria-hidden="true"></i> <span data-i18n="story1_topic">Anxiety &amp; Burnout</span></span>
+                <span class="story-badge-verified"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> <span data-i18n="badge_verified_care">Verified Care</span></span>
+              </div>
+              <blockquote class="story-quote" data-i18n="story1_quote">
+                “Taking that first step with Habi felt so gentle. Within 48 hours, I was talking to a psychologist in Douala who truly understood my background and gave me practical tools to breathe again.”
+              </blockquote>
+              <div class="story-voice-preview">
+                <button class="voice-note-btn" type="button" aria-label="Play audio snippet of Amara's journey" data-audio="audio-1">
+                  <span class="play-icon"><i class="fa-solid fa-play" aria-hidden="true"></i></span>
+                  <span class="voice-label" data-i18n="voice_label_gentle">Listen to gentle voice note</span>
+                  <span class="voice-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+                  <span class="voice-duration">0:24</span>
+                </button>
+              </div>
+              <div class="story-footer">
+                <div class="story-author">
+                  <div class="author-avatar avatar-bronze">AK</div>
+                  <div class="author-meta">
+                    <strong>Amara K.</strong>
+                    <small data-i18n="story1_meta">Douala, Cameroon · Supported for 6 mos</small>
+                  </div>
+                </div>
+                <button class="read-story-btn" type="button" aria-haspopup="dialog" data-story-id="1">
+                  <span data-i18n="story_btn_full">Full Story</span> <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </button>
+              </div>
+            </article>
+
+            <!-- Story 2: Professional -->
+            <article class="story-card" data-category="professionals" data-id="story-2">
+              <div class="story-top">
+                <span class="story-topic-badge topic-blue"><i class="fa-solid fa-stethoscope" aria-hidden="true"></i> <span data-i18n="story2_topic">Clinical Continuity</span></span>
+                <span class="story-badge-verified specialist-badge"><i class="fa-solid fa-shield-heart" aria-hidden="true"></i> <span data-i18n="badge_licensed_specialist">Licensed Specialist</span></span>
+              </div>
+              <blockquote class="story-quote" data-i18n="story2_quote">
+                “Habi’s pre-assessment gives me essential context before our first consultation. It eliminates repetitive intake stress and allows our therapy sessions to begin with deep empathy.”
+              </blockquote>
+              <div class="story-voice-preview">
+                <button class="voice-note-btn" type="button" aria-label="Play audio snippet of Dr. Jean-Paul's clinical perspective" data-audio="audio-2">
+                  <span class="play-icon"><i class="fa-solid fa-play" aria-hidden="true"></i></span>
+                  <span class="voice-label" data-i18n="voice_label_spec">Specialist insight snippet</span>
+                  <span class="voice-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+                  <span class="voice-duration">0:32</span>
+                </button>
+              </div>
+              <div class="story-footer">
+                <div class="story-author">
+                  <div class="author-avatar avatar-teal">JP</div>
+                  <div class="author-meta">
+                    <strong>Dr. Jean-Paul N.</strong>
+                    <small data-i18n="story2_meta">Clinical Psychologist · Yaoundé</small>
+                  </div>
+                </div>
+                <button class="read-story-btn" type="button" aria-haspopup="dialog" data-story-id="2">
+                  <span data-i18n="story_btn_full">Full Story</span> <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </button>
+              </div>
+            </article>
+
+            <!-- Story 3: Organization -->
+            <article class="story-card" data-category="organizations" data-id="story-3">
+              <div class="story-top">
+                <span class="story-topic-badge topic-storm"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> <span data-i18n="story3_topic">University Well-being</span></span>
+                <span class="story-badge-verified org-badge"><i class="fa-solid fa-building-circle-check" aria-hidden="true"></i> <span data-i18n="badge_higher_ed">Higher Ed Partner</span></span>
+              </div>
+              <blockquote class="story-quote" data-i18n="story3_quote">
+                “Partnering with HabiLift gave our students a confidential, stigma-free bridge to verified counselors. Early interventions and student engagement tripled in one semester.”
+              </blockquote>
+              <div class="story-voice-preview">
+                <button class="voice-note-btn" type="button" aria-label="Play audio snippet of Buea Campus health directorate" data-audio="audio-3">
+                  <span class="play-icon"><i class="fa-solid fa-play" aria-hidden="true"></i></span>
+                  <span class="voice-label" data-i18n="voice_label_inst">Institutional partnership review</span>
+                  <span class="voice-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+                  <span class="voice-duration">0:28</span>
+                </button>
+              </div>
+              <div class="story-footer">
+                <div class="story-author">
+                  <div class="author-avatar avatar-storm">UB</div>
+                  <div class="author-meta">
+                    <strong>Student Affairs Directorate</strong>
+                    <small data-i18n="story3_meta">Higher Education Coalition · Buea</small>
+                  </div>
+                </div>
+                <button class="read-story-btn" type="button" aria-haspopup="dialog" data-story-id="3">
+                  <span data-i18n="story_btn_full">Full Story</span> <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </button>
+              </div>
+            </article>
+
+            <!-- Story 4: Family Account -->
+            <article class="story-card" data-category="individuals" data-id="story-4">
+              <div class="story-top">
+                <span class="story-topic-badge topic-bronze"><i class="fa-solid fa-people-roof" aria-hidden="true"></i> <span data-i18n="story4_topic">Family Support</span></span>
+                <span class="story-badge-verified"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> <span data-i18n="badge_verified_fam">Verified Family</span></span>
+              </div>
+              <blockquote class="story-quote" data-i18n="story4_quote">
+                “When our teenager started withdrawing quietly, we felt helpless. HabiLift guided us on how to be supportive without pressure, and connected him with an adolescent counselor he trusts.”
+              </blockquote>
+              <div class="story-voice-preview">
+                <button class="voice-note-btn" type="button" aria-label="Play audio snippet of Kofi and Evelyn" data-audio="audio-4">
+                  <span class="play-icon"><i class="fa-solid fa-play" aria-hidden="true"></i></span>
+                  <span class="voice-label" data-i18n="voice_label_parent">Parent reflection audio</span>
+                  <span class="voice-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+                  <span class="voice-duration">0:30</span>
+                </button>
+              </div>
+              <div class="story-footer">
+                <div class="story-author">
+                  <div class="author-avatar avatar-earth">KE</div>
+                  <div class="author-meta">
+                    <strong>Kofi &amp; Evelyn M.</strong>
+                    <small data-i18n="story4_meta">Accra, Ghana · Family Care Path</small>
+                  </div>
+                </div>
+                <button class="read-story-btn" type="button" aria-haspopup="dialog" data-story-id="4">
+                  <span data-i18n="story_btn_full">Full Story</span> <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </button>
+              </div>
+            </article>
+
+            <!-- Story 5: Specialist Cross-Border -->
+            <article class="story-card" data-category="professionals" data-id="story-5">
+              <div class="story-top">
+                <span class="story-topic-badge topic-teal"><i class="fa-solid fa-laptop-medical" aria-hidden="true"></i> <span data-i18n="story5_topic">Coordinated Tele-Care</span></span>
+                <span class="story-badge-verified specialist-badge"><i class="fa-solid fa-shield-heart" aria-hidden="true"></i> <span data-i18n="badge_consultant_psych">Consultant Psychiatrist</span></span>
+              </div>
+              <blockquote class="story-quote" data-i18n="story5_quote">
+                “The encrypted case notes and seamless referral network allow me to coordinate with therapists and clinics across borders without sacrificing patient privacy or dignity.”
+              </blockquote>
+              <div class="story-voice-preview">
+                <button class="voice-note-btn" type="button" aria-label="Play audio snippet of Dr. Thorne" data-audio="audio-5">
+                  <span class="play-icon"><i class="fa-solid fa-play" aria-hidden="true"></i></span>
+                  <span class="voice-label" data-i18n="voice_label_psych">Psychiatry workflow review</span>
+                  <span class="voice-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+                  <span class="voice-duration">0:35</span>
+                </button>
+              </div>
+              <div class="story-footer">
+                <div class="story-author">
+                  <div class="author-avatar avatar-blue">AT</div>
+                  <div class="author-meta">
+                    <strong>Dr. Aris T.</strong>
+                    <small data-i18n="story5_meta">Psychiatry Consultant · Nairobi</small>
+                  </div>
+                </div>
+                <button class="read-story-btn" type="button" aria-haspopup="dialog" data-story-id="5">
+                  <span data-i18n="story_btn_full">Full Story</span> <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </button>
+              </div>
+            </article>
+
+            <!-- Story 6: Corporate Wellness -->
+            <article class="story-card" data-category="organizations" data-id="story-6">
+              <div class="story-top">
+                <span class="story-topic-badge topic-blue"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i> <span data-i18n="story6_topic">Workplace Well-being</span></span>
+                <span class="story-badge-verified org-badge"><i class="fa-solid fa-building-circle-check" aria-hidden="true"></i> <span data-i18n="badge_enterprise">Enterprise Partner</span></span>
+              </div>
+              <blockquote class="story-quote" data-i18n="story6_quote">
+                “Our engineers and creative teams now have direct, confidential mental health access. Burnout-related leaves decreased by 42% while overall team psychological safety blossomed.”
+              </blockquote>
+              <div class="story-voice-preview">
+                <button class="voice-note-btn" type="button" aria-label="Play audio snippet of Apex Hub HR director" data-audio="audio-6">
+                  <span class="play-icon"><i class="fa-solid fa-play" aria-hidden="true"></i></span>
+                  <span class="voice-label" data-i18n="voice_label_corp">Workplace wellness impact</span>
+                  <span class="voice-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+                  <span class="voice-duration">0:26</span>
+                </button>
+              </div>
+              <div class="story-footer">
+                <div class="story-author">
+                  <div class="author-avatar avatar-bronze">AH</div>
+                  <div class="author-meta">
+                    <strong>Apex Tech &amp; Creative Hubs</strong>
+                    <small data-i18n="story6_meta">Lagos, Nigeria · 280+ Team Members</small>
+                  </div>
+                </div>
+                <button class="read-story-btn" type="button" aria-haspopup="dialog" data-story-id="6">
+                  <span data-i18n="story_btn_full">Full Story</span> <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </button>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- Pagination & Carousel Dots -->
+        <div class="stories-pagination" aria-label="Stories pagination">
+          <div class="stories-dots-wrapper" role="group" aria-label="Choose story slide"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Story Modal Dialog -->
+    <div class="story-modal-overlay" id="story-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-story-title">
+      <div class="story-modal-card">
+        <button class="modal-close-btn" id="modal-close" type="button" aria-label="Close story dialog">
+          <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+        </button>
+        <div class="modal-content-inner" id="modal-content">
+          <!-- Dynamically populated via JS -->
+        </div>
+      </div>
+    </div>
+
+    <section class="trust section-pad" aria-labelledby="trust-title">
+      <div class="wrap trust-layout">
+        <div>
+          <p class="eyebrow" data-i18n="trust_eyebrow">Trust is part of care</p>
+          <h2 id="trust-title" data-i18n="trust_title">Your story deserves<br>to be treated <em>with care.</em></h2>
+          <p class="trust-lede" data-i18n="trust_lede">Feeling safe enough to begin matters. We believe care should be thoughtful about your privacy, clear about professional support, and centered on your choices.</p>
+          <a class="arrow-link" href="?page=trust"><span data-i18n="trust_link">Our approach to trust</span> <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="trust-points">
+          <article>
+            <span class="trust-icon">⌑</span>
+            <div>
+              <h3 data-i18n="trust_p1_title">Your privacy matters</h3>
+              <p data-i18n="trust_p1_desc">Understand what you share and why.</p>
+            </div>
+          </article>
+          <article>
+            <span class="trust-icon">✳</span>
+            <div>
+              <h3 data-i18n="trust_p2_title">People stay at the center</h3>
+              <p data-i18n="trust_p2_desc">Habi supports the start; professionals support care.</p>
+            </div>
+          </article>
+          <article>
+            <span class="trust-icon">♡</span>
+            <div>
+              <h3 data-i18n="trust_p3_title">Care should feel considered</h3>
+              <p data-i18n="trust_p3_desc">Clear choices and thoughtful support at every step.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing-cta section-pad">
+      <div class="wrap cta-card">
+        <div class="cta-spark" aria-hidden="true"><i class="fa-solid fa-seedling"></i></div>
+        <p class="eyebrow" data-i18n="cta_eyebrow">Whenever you feel ready</p>
+        <h2 data-i18n="cta_title">Your next step can<br>start <em>right here.</em></h2>
+        <p data-i18n="cta_desc">You don’t need a perfect plan. Just a place to begin.</p>
+        <a class="button button-primary" href="?page=individuals"><span data-i18n="cta_btn">Find your next step</span> <span aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span></a>
+      </div>
+    </section>
+  </main>
+
+  <main id="placeholder" class="placeholder wrap" hidden></main>
+  
+  <footer class="site-footer">
+    <div class="wrap footer-main">
+      <div class="footer-brand">
+        <a class="brand brand-footer" href="index.html" aria-label="HabiLift home"><img src="logo-light.png" alt="HabiLift logo" class="brand-logo" id="footer-logo"></a>
+        <p data-i18n="footer_slogan">A more human way to find support.</p>
+      </div>
+      <div class="footer-column">
+        <h2 data-i18n="footer_col1_title">Explore</h2>
+        <a href="?page=how-it-works" data-i18n="nav_how_it_helps">How it helps</a>
+        <a href="?page=meet-habi" data-i18n="nav_meet_habi">Meet Habi</a>
+        <a href="?page=individuals" data-i18n="nav_individuals">For individuals</a>
+        <a href="?page=professionals" data-i18n="nav_professionals">For professionals</a>
+        <a href="?page=organizations" data-i18n="nav_organizations">Organizations</a>
+        <a href="?page=resources" data-i18n="nav_resources">Resources</a>
+      </div>
+      <div class="footer-column">
+        <h2 data-i18n="footer_col2_title">Discover</h2>
+        <a href="?page=about" data-i18n="nav_about">About us</a>
+        <a href="index.html#reviews" data-i18n="nav_stories">Stories &amp; reviews</a>
+        <a href="?page=news-events" data-i18n="nav_news">News &amp; events</a>
+        <a href="?page=blog" data-i18n="nav_blog">Blog</a>
+        <a href="?page=community" data-i18n="nav_community">Community</a>
+        <a href="?page=contact" data-i18n="nav_contact">Contact us</a>
+      </div>
+      <div class="footer-note">
+        <span class="footer-spark"><i class="fa-solid fa-heart"></i></span>
+        <p data-i18n="footer_note">Care grows stronger<br>when we’re connected.</p>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <span>© <span id="year"></span> HabiLift</span>
+      <span data-i18n="footer_motto">People first. Care connected.</span>
+      <a href="?page=privacy" data-i18n="footer_privacy">Privacy &amp; safety</a>
+    </div>
+  </footer>
+</body>
+</html>
