@@ -38,6 +38,38 @@
 
   <a class="skip-link" href="#main">Skip to content</a>
 
+  <div class="topbar">
+
+    <div class="wrap topbar-inner">
+
+      <div class="topbar-contact">
+
+        <span class="topbar-item"><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span data-i18n="topbar_location">Buea, Cameroon</span></span>
+
+        <a class="topbar-item topbar-email" href="mailto:hello@habilift.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span data-i18n="topbar_email">hello@habilift.com</span></a>
+
+        <a class="topbar-item topbar-phone" href="tel:+237000000000"><i class="fa-solid fa-phone" aria-hidden="true"></i><span data-i18n="topbar_phone">+237 000 000 000</span></a>
+
+      </div>
+
+      <div class="topbar-social" aria-label="Social media">
+
+        <span class="topbar-social-label" data-i18n="topbar_follow">Follow us</span>
+
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+
+        <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+
+      </div>
+
+    </div>
+
+  </div>
+
   <header class="site-header">
 
     <div class="header-inner wrap">
@@ -176,6 +208,26 @@
 
           <img class="hero-slide" src="heroslidingimages/hero_support.jpg" alt="Two loved ones comforting each other with genuine compassion." loading="lazy" data-caption="You never have to carry" data-caption-em="everything on your own." data-caption-fr="Vous n’avez plus à porter" data-caption-em-fr="tout le poids en solitaire.">
 
+          <div class="visual-caption" aria-live="off"><span class="caption-line">Some days, taking a breath</span><br><em class="caption-em">is a brave beginning.</em></div>
+
+          <div class="hero-carousel-controls" role="group" aria-label="Choose a HabiLift story image">
+
+            <button class="carousel-dot is-active" type="button" aria-label="Show story 1: A brave beginning" aria-pressed="true"></button>
+
+            <button class="carousel-dot" type="button" aria-label="Show story 2: Thoughtful care" aria-pressed="false"></button>
+
+            <button class="carousel-dot" type="button" aria-label="Show story 3: Human connection" aria-pressed="false"></button>
+
+            <button class="carousel-dot" type="button" aria-label="Show story 4: Compassionate counselor" aria-pressed="false"></button>
+
+            <button class="carousel-dot" type="button" aria-label="Show story 5: Mindfulness in nature" aria-pressed="false"></button>
+
+            <button class="carousel-dot" type="button" aria-label="Show story 6: Trusted consultation" aria-pressed="false"></button>
+
+            <button class="carousel-dot" type="button" aria-label="Show story 7: Caring connection" aria-pressed="false"></button>
+
+          </div>
+
         </div>
 
         <div class="visual-label">
@@ -183,26 +235,6 @@
           <span class="label-spark" aria-hidden="true"><i class="fa-solid fa-people-arrows-left-right"></i></span>
 
           <span><strong data-i18n="visual_label_title">Care feels closer</strong><small data-i18n="visual_label_subtitle">One thoughtful step at a time</small></span>
-
-        </div>
-
-        <div class="visual-caption" aria-live="off"><span class="caption-line">Some days, taking a breath</span><br><em class="caption-em">is a brave beginning.</em></div>
-
-        <div class="hero-carousel-controls" role="group" aria-label="Choose a HabiLift story image">
-
-          <button class="carousel-dot is-active" type="button" aria-label="Show story 1: A brave beginning" aria-pressed="true"></button>
-
-          <button class="carousel-dot" type="button" aria-label="Show story 2: Thoughtful care" aria-pressed="false"></button>
-
-          <button class="carousel-dot" type="button" aria-label="Show story 3: Human connection" aria-pressed="false"></button>
-
-          <button class="carousel-dot" type="button" aria-label="Show story 4: Compassionate counselor" aria-pressed="false"></button>
-
-          <button class="carousel-dot" type="button" aria-label="Show story 5: Mindfulness in nature" aria-pressed="false"></button>
-
-          <button class="carousel-dot" type="button" aria-label="Show story 6: Trusted consultation" aria-pressed="false"></button>
-
-          <button class="carousel-dot" type="button" aria-label="Show story 7: Caring connection" aria-pressed="false"></button>
 
         </div>
 
@@ -1447,6 +1479,32 @@
 
   <footer class="site-footer">
 
+    <div class="wrap footer-newsletter">
+
+      <div class="footer-newsletter-copy">
+
+        <h2 data-i18n="footer_newsletter_title">Stay in the loop</h2>
+
+        <p data-i18n="footer_newsletter_desc">Gentle updates on care, community and what’s new at HabiLift.</p>
+
+      </div>
+
+      <form class="newsletter-form" id="newsletter-form" novalidate>
+
+        <label class="sr-only" for="newsletter-email">Email address</label>
+
+        <input type="email" id="newsletter-email" name="email" autocomplete="email" required placeholder="Enter your email" data-i18n-placeholder="footer_newsletter_placeholder">
+
+        <button type="submit" class="button button-primary"><span data-i18n="footer_newsletter_btn">Subscribe</span> <i class="fa-solid fa-paper-plane" aria-hidden="true"></i></button>
+
+        <p class="newsletter-note" data-i18n="footer_newsletter_note">We respect your privacy. Unsubscribe anytime.</p>
+
+        <p class="newsletter-status" id="newsletter-status" role="status" aria-live="polite"></p>
+
+      </form>
+
+    </div>
+
     <div class="wrap footer-main">
 
       <div class="footer-brand">
@@ -1454,6 +1512,18 @@
         <a class="brand brand-footer" href="index.html" aria-label="HabiLift home"><img src="logo-light.png" alt="HabiLift logo" class="brand-logo" id="footer-logo"></a>
 
         <p data-i18n="footer_slogan">A more human way to find support.</p>
+
+        <div class="footer-social" aria-label="Social media">
+
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+
+          <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+
+        </div>
 
       </div>
 
@@ -1493,11 +1563,15 @@
 
       </div>
 
-      <div class="footer-note">
+      <div class="footer-contact">
 
-        <span class="footer-spark"><i class="fa-solid fa-heart"></i></span>
+        <h2 data-i18n="footer_contact_title">Get in touch</h2>
 
-        <p data-i18n="footer_note">Care grows stronger<br>when we’re connected.</p>
+        <span class="footer-contact-item"><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span data-i18n="footer_address">Buea, Cameroon</span></span>
+
+        <a class="footer-contact-item" href="mailto:hello@habilift.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span data-i18n="topbar_email">hello@habilift.com</span></a>
+
+        <a class="footer-contact-item" href="tel:+237000000000"><i class="fa-solid fa-phone" aria-hidden="true"></i><span data-i18n="topbar_phone">+237 000 000 000</span></a>
 
       </div>
 

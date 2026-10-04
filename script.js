@@ -250,7 +250,20 @@ const i18n = {
     footer_col2_title: "Discover",
     footer_note: "Care grows stronger<br>when we’re connected.",
     footer_motto: "People first. Care connected.",
-    footer_privacy: "Privacy & safety"
+    footer_privacy: "Privacy & safety",
+    topbar_location: "Buea, Cameroon",
+    topbar_email: "hello@habilift.com",
+    topbar_phone: "+237 000 000 000",
+    topbar_follow: "Follow us",
+    footer_contact_title: "Get in touch",
+    footer_address: "Buea, Cameroon",
+    footer_newsletter_title: "Stay in the loop",
+    footer_newsletter_desc: "Gentle updates on care, community and what’s new at HabiLift.",
+    footer_newsletter_placeholder: "Enter your email",
+    footer_newsletter_btn: "Subscribe",
+    footer_newsletter_note: "We respect your privacy. Unsubscribe anytime.",
+    newsletter_success: "Thank you — you’re on the list!",
+    newsletter_invalid: "Please enter a valid email address."
   },
   fr: {
     // Nav
@@ -467,7 +480,20 @@ const i18n = {
     footer_col2_title: "Découvrir",
     footer_note: "Le soin devient plus fort<br>quand nous sommes connectés.",
     footer_motto: "L'humain d'abord. Les soins connectés.",
-    footer_privacy: "Confidentialité & Sécurité"
+    footer_privacy: "Confidentialité & Sécurité",
+    topbar_location: "Buea, Cameroun",
+    topbar_email: "hello@habilift.com",
+    topbar_phone: "+237 000 000 000",
+    topbar_follow: "Suivez-nous",
+    footer_contact_title: "Nous contacter",
+    footer_address: "Buea, Cameroun",
+    footer_newsletter_title: "Restez informé",
+    footer_newsletter_desc: "Des nouvelles douces sur le soin, la communauté et l’actualité de HabiLift.",
+    footer_newsletter_placeholder: "Entrez votre email",
+    footer_newsletter_btn: "S’abonner",
+    footer_newsletter_note: "Nous respectons votre vie privée. Désabonnez-vous à tout moment.",
+    newsletter_success: "Merci — vous êtes inscrit !",
+    newsletter_invalid: "Veuillez saisir une adresse email valide."
   }
 };
 
@@ -1197,13 +1223,13 @@ if (!reducedMotion && window.particlesJS && document.querySelector("#particles-j
 if (!reducedMotion && window.particlesJS && document.querySelector("#hero-background-particles")) {
   window.particlesJS("hero-background-particles", {
     particles: {
-      number: { value: 27, density: { enable: true, value_area: 850 } },
+      number: { value: 48, density: { enable: true, value_area: 820 } },
       color: { value: ["#0066ff", "#45bab7", "#e1a574"] },
       shape: { type: "circle" },
-      opacity: { value: 0.24, random: true },
+      opacity: { value: 0.3, random: true },
       size: { value: 3, random: true },
-      line_linked: { enable: true, distance: 125, color: "#45bab7", opacity: 0.16, width: 1 },
-      move: { enable: true, speed: 0.35, direction: "none", random: true, straight: false, out_mode: "out", bounce: false }
+      line_linked: { enable: true, distance: 130, color: "#45bab7", opacity: 0.18, width: 1 },
+      move: { enable: true, speed: 0.6, direction: "top-right", random: true, straight: false, out_mode: "out", bounce: false }
     },
     interactivity: { detect_on: "canvas", events: { onhover: { enable: false }, onclick: { enable: false }, resize: true } },
     retina_detect: true
@@ -1464,3 +1490,34 @@ document.querySelectorAll(".video-facade").forEach(facade => {
     facade.replaceWith(iframe);
   });
 });
+
+/* ==========================================================================
+   NEWSLETTER SUBSCRIPTION
+   ========================================================================== */
+const newsletterForm = document.querySelector("#newsletter-form");
+if (newsletterForm) {
+  const emailInput = newsletterForm.querySelector("#newsletter-email");
+  const statusEl = newsletterForm.querySelector("#newsletter-status");
+
+  newsletterForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const dict = i18n[currentLang] || i18n.en;
+    const value = (emailInput ? emailInput.value : "").trim();
+    const isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+
+    if (!statusEl) return;
+
+    if (!isValid) {
+      statusEl.textContent = dict.newsletter_invalid;
+      statusEl.classList.remove("is-ok");
+      statusEl.classList.add("is-error");
+      if (emailInput) emailInput.focus();
+      return;
+    }
+
+    statusEl.textContent = dict.newsletter_success;
+    statusEl.classList.remove("is-error");
+    statusEl.classList.add("is-ok");
+    newsletterForm.reset();
+  });
+}
