@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HabiLift Video</title>
+  <style>
+    :root { color-scheme: light dark; }
+    html, body { margin: 0; height: 100%; }
+    body {
+      display: grid;
+      place-items: center;
+      font-family: "Plus Jakarta Sans", "Inter", Arial, sans-serif;
+      background: linear-gradient(135deg, #1c6f7b 0%, #10424a 100%);
+      color: #ffffff;
+      text-align: center;
+      padding: 24px;
+    }
+    .play {
+      width: 74px;
+      height: 74px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.16);
+      border: 2px solid rgba(255, 255, 255, 0.7);
+      display: grid;
+      place-items: center;
+      margin: 0 auto 18px;
+    }
+    .play::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      margin-left: 5px;
+      border-style: solid;
+      border-width: 13px 0 13px 22px;
+      border-color: transparent transparent transparent #ffffff;
+    }
+    h1 { font-size: 18px; margin: 0 0 8px; font-weight: 700; }
+    p { margin: 0; font-size: 13px; opacity: 0.85; max-width: 320px; line-height: 1.6; }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="play" aria-hidden="true"></div>
+    <h1>HabiLift video coming soon</h1>
+    <p>Replace this placeholder with your YouTube or Vimeo embed URL in <strong>index.html</strong>.</p>
+  </div>
+</body>
+</html>

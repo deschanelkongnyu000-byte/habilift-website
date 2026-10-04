@@ -152,6 +152,40 @@ const i18n = {
     founder_signoff: "Born from loss. Shaped by experience. Built through technology.",
     founder_link: "More about HabiLift",
 
+    // Partners
+    partners_eyebrow: "Trusted by organizations that care",
+    partners_title: "Our <em>partners</em> and collaborators",
+    partners_desc: "Working together to make mental healthcare more accessible and connected.",
+
+    // About
+    about_eyebrow: "About HabiLift",
+    about_title: "A human-first approach to <em>connected care</em>",
+    about_p1: "HabiLift was born from the belief that no one should have to navigate mental healthcare alone. We connect individuals, verified professionals, and organizations through a secure, compassionate platform.",
+    about_p2: "Our mission is to bridge gaps in access, coordination, and continuity of care—creating an ecosystem where support feels human, trusted, and accessible to all.",
+    about_feature1_title: "Safe & Secure",
+    about_feature1_desc: "Privacy and consent are at the heart of everything we build.",
+    about_feature2_title: "Connected Ecosystem",
+    about_feature2_desc: "Bringing people and organizations together for coordinated care.",
+    about_feature3_title: "Human-Centered",
+    about_feature3_desc: "Compassion drives every decision, not just technology.",
+    about_cta: "Learn more about us",
+    about_video_caption: "A glimpse into our mission of connected care",
+
+    // FAQs
+    faq_eyebrow: "Frequently Asked Questions",
+    faq_title: "Find answers to <em>common questions</em>",
+    faq_desc: "Everything you need to know about getting started with HabiLift.",
+    faq_q1: "What is HabiLift?",
+    faq_a1: "HabiLift is a connected mental healthcare ecosystem that brings individuals, verified professionals, and organizations together to provide accessible, coordinated, and compassionate care.",
+    faq_q2: "Is HabiLift safe and private?",
+    faq_a2: "Yes. Your privacy, consent, and security are our top priorities. We follow strict protocols to protect your information and ensure all professionals are verified.",
+    faq_q3: "Who can use HabiLift?",
+    faq_a3: "HabiLift is designed for individuals seeking support, mental health professionals, and organizations like hospitals, schools, NGOs, and companies.",
+    faq_q4: "How do I get started?",
+    faq_a4: "Getting started is simple. Click \"Find Support\", speak with Habi about how you're feeling, and we'll help guide you to the right next step at your pace.",
+    faq_q5: "Are professionals verified?",
+    faq_a5: "All mental health professionals on HabiLift go through a verification process to ensure credentials and qualifications meet our standards for safe, quality care.",
+
     // Stories
     stories_eyebrow: "Real People · Real Journeys",
     stories_title: "Stories of finding<br>a <em>way forward.</em>",
@@ -334,6 +368,40 @@ const i18n = {
     founder_p2: "Porté par cette épreuve, Fondung s'est formé au développement web et à l'innovation numérique au Jongo Hub de Buéa. En 2025, il a uni son expertise en Éducation Spécialisée et en technologie pour fonder HabiLift—un écosystème connecté comblant le fossé entre individus, spécialistes et structures de santé mentale.",
     founder_signoff: "Né d'une perte. Forgé par l'expérience. Conçu grâce à la technologie.",
     founder_link: "En savoir plus sur HabiLift",
+
+    // Partners
+    partners_eyebrow: "La confiance d'organisations engagées",
+    partners_title: "Nos <em>partenaires</em> et collaborateurs",
+    partners_desc: "Nous travaillons ensemble pour rendre les soins de santé mentale plus accessibles et connectés.",
+
+    // About
+    about_eyebrow: "À propos de HabiLift",
+    about_title: "Une approche humaine pour des <em>soins connectés</em>",
+    about_p1: "HabiLift est né de la conviction que personne ne devrait naviguer seul dans le système de santé mentale. Nous relions les individus, les professionnels vérifiés et les organisations via une plateforme sécurisée et bienveillante.",
+    about_p2: "Notre mission est de combler les lacunes d'accès, de coordination et de continuité des soins—en créant un écosystème où le soutien est humain, fiable et accessible à tous.",
+    about_feature1_title: "Sûr & Sécurisé",
+    about_feature1_desc: "La confidentialité et le consentement sont au cœur de tout ce que nous construisons.",
+    about_feature2_title: "Écosystème Connecté",
+    about_feature2_desc: "Rapprocher les personnes et les organisations pour des soins coordonnés.",
+    about_feature3_title: "Centré sur l'Humain",
+    about_feature3_desc: "La compassion guide chaque décision, pas seulement la technologie.",
+    about_cta: "En savoir plus sur nous",
+    about_video_caption: "Un aperçu de notre mission de soins connectés",
+
+    // FAQs
+    faq_eyebrow: "Questions Fréquentes",
+    faq_title: "Trouvez des réponses à vos <em>questions</em>",
+    faq_desc: "Tout ce qu'il faut savoir pour bien démarrer avec HabiLift.",
+    faq_q1: "Qu'est-ce que HabiLift ?",
+    faq_a1: "HabiLift est un écosystème connecté de santé mentale qui réunit les individus, les professionnels vérifiés et les organisations pour offrir des soins accessibles, coordonnés et bienveillants.",
+    faq_q2: "HabiLift est-il sûr et confidentiel ?",
+    faq_a2: "Oui. Votre confidentialité, votre consentement et votre sécurité sont nos priorités absolues. Nous appliquons des protocoles stricts pour protéger vos informations et vérifier tous les professionnels.",
+    faq_q3: "Qui peut utiliser HabiLift ?",
+    faq_a3: "HabiLift est conçu pour les personnes en recherche de soutien, les professionnels de la santé mentale et les organisations telles que les hôpitaux, écoles, ONG et entreprises.",
+    faq_q4: "Comment commencer ?",
+    faq_a4: "Démarrer est simple. Cliquez sur « Trouver du soutien », échangez avec Habi sur ce que vous ressentez, et nous vous guiderons vers la prochaine étape à votre rythme.",
+    faq_q5: "Les professionnels sont-ils vérifiés ?",
+    faq_a5: "Tous les professionnels de santé mentale sur HabiLift passent par un processus de vérification afin de garantir que leurs qualifications répondent à nos normes de soins sûrs et de qualité.",
 
     // Stories
     stories_eyebrow: "Vraies personnes · Vrais parcours",
@@ -740,12 +808,11 @@ function setLanguage(lang, persist = true) {
     }
   });
 
-  // Update language selector buttons
-  document.querySelectorAll(".lang-btn").forEach(btn => {
-    const isActive = btn.dataset.lang === lang;
-    btn.classList.toggle("is-active", isActive);
-    btn.setAttribute("aria-pressed", String(isActive));
-  });
+  // Update language selector dropdown
+  const langSelect = document.querySelector("#lang-select");
+  if (langSelect && langSelect.value !== lang) {
+    langSelect.value = lang;
+  }
 
   // Update hero slide caption
   const currentSlide = heroSlides[activeSlide] || heroSlides[0];
@@ -759,14 +826,15 @@ function setLanguage(lang, persist = true) {
   }
 }
 
-document.querySelectorAll(".lang-btn").forEach(btn => {
-  btn.addEventListener("click", () => {
-    const targetLang = btn.dataset.lang;
+const langSelect = document.querySelector("#lang-select");
+if (langSelect) {
+  langSelect.addEventListener("change", (e) => {
+    const targetLang = e.target.value;
     if (targetLang && targetLang !== currentLang) {
       setLanguage(targetLang, true);
     }
   });
-});
+}
 
 /* ==========================================================================
    DYNAMIC PAGE ROUTER
@@ -1359,3 +1427,40 @@ document.addEventListener("keydown", (e) => {
 
 // Initialize active language on startup
 setLanguage(currentLang, false);
+
+/* ==========================================================================
+   FAQ ACCORDION
+   ========================================================================== */
+document.querySelectorAll(".faq-item").forEach(item => {
+  const question = item.querySelector(".faq-question");
+  if (!question) return;
+  question.addEventListener("click", () => {
+    const isOpen = item.classList.contains("is-open");
+    document.querySelectorAll(".faq-item.is-open").forEach(openItem => {
+      if (openItem !== item) {
+        openItem.classList.remove("is-open");
+        const openQ = openItem.querySelector(".faq-question");
+        if (openQ) openQ.setAttribute("aria-expanded", "false");
+      }
+    });
+    item.classList.toggle("is-open", !isOpen);
+    question.setAttribute("aria-expanded", String(!isOpen));
+  });
+});
+
+/* ==========================================================================
+   LITE YOUTUBE EMBED (thumbnail facade -> player on click)
+   ========================================================================== */
+document.querySelectorAll(".video-facade").forEach(facade => {
+  facade.addEventListener("click", () => {
+    const videoId = facade.dataset.videoId;
+    if (!videoId) return;
+    const iframe = document.createElement("iframe");
+    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
+    iframe.title = facade.getAttribute("aria-label") || "Video player";
+    iframe.setAttribute("frameborder", "0");
+    iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+    iframe.setAttribute("allowfullscreen", "");
+    facade.replaceWith(iframe);
+  });
+});
