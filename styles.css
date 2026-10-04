@@ -5562,5 +5562,140 @@ div[id] {
     }
 }
 
+/* ==========================================================================
+   DESIGN REFRESH — cohesion, depth & micro-interactions
+   ========================================================================== */
+
+/* Phones: hero image becomes a clean rounded-rectangle card (no arch, no backdrop) */
+@media (max-width: 700px) {
+    .hero-shape-backdrop {
+        display: none !important;
+    }
+
+    .hero-visual {
+        height: auto;
+        aspect-ratio: 4 / 3;
+        max-width: 100%;
+        width: 100%;
+        margin-top: 4px;
+    }
+
+    .hero-visual:before {
+        display: none;
+    }
+
+    .hero-photo {
+        inset: 0;
+        border-radius: 24px;
+        border: 1px solid rgba(22, 54, 58, 0.08);
+        box-shadow: 0 18px 44px rgba(22, 54, 58, 0.18);
+    }
+
+    .hero-photo img {
+        border-radius: inherit;
+    }
+
+    .visual-caption {
+        right: 10px;
+        top: 12px;
+        max-width: 190px;
+    }
+
+    .visual-label {
+        left: 10px;
+        bottom: 48px;
+    }
+}
+
+/* Centered section titles: signature gradient underline */
+.section-heading.centered h2::after {
+    content: "";
+    display: block;
+    width: 58px;
+    height: 4px;
+    margin: 20px auto 0;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--teal), var(--bronze));
+    opacity: 0.9;
+}
+
+/* Reach statistics: dimensional gradient numerals */
+.reach-item strong {
+    background: linear-gradient(120deg, #ffffff 0%, #c6ebe5 52%, #f0c197 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Primary buttons: subtle gradient + coloured glow */
+.button-primary {
+    background: linear-gradient(135deg, #2f7bff 0%, #0066ff 55%, #0052d6 100%);
+    box-shadow: 0 10px 24px rgba(0, 102, 255, 0.26);
+}
+
+[data-theme="dark"] .button-primary {
+    background: linear-gradient(135deg, #6ba3ff 0%, #4c8dff 55%, #3a7ae0 100%);
+    box-shadow: 0 10px 24px rgba(76, 141, 255, 0.3);
+}
+
+.button-primary:hover {
+    box-shadow: 0 16px 34px rgba(0, 102, 255, 0.36);
+}
+
+/* About section: soft aurora background for depth */
+.about-section {
+    background:
+        radial-gradient(60% 70% at 88% 8%, rgba(69, 186, 183, 0.1) 0%, transparent 60%),
+        radial-gradient(55% 65% at 2% 96%, rgba(225, 165, 116, 0.1) 0%, transparent 62%),
+        var(--paper);
+}
+
+[data-theme="dark"] .about-section {
+    background:
+        radial-gradient(60% 70% at 88% 8%, rgba(79, 209, 197, 0.1) 0%, transparent 60%),
+        radial-gradient(55% 65% at 2% 96%, rgba(246, 173, 85, 0.08) 0%, transparent 62%),
+        #0b1517;
+}
+
+/* About feature rows: gentle hover response */
+.about-feature {
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.about-feature .feature-icon {
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease;
+}
+
+.about-feature:hover {
+    transform: translateX(5px);
+}
+
+.about-feature:hover .feature-icon {
+    transform: scale(1.07) rotate(-4deg);
+    box-shadow: 0 10px 20px rgba(28, 111, 123, 0.22);
+}
+
+/* Video card: richer lift */
+.video-wrapper {
+    box-shadow: 0 24px 58px rgba(28, 111, 123, 0.2);
+}
+
+[data-theme="dark"] .video-wrapper {
+    box-shadow: 0 24px 58px rgba(0, 0, 0, 0.5);
+}
+
+/* FAQ section: subtle tinted band for rhythm */
+.faq-section {
+    background: linear-gradient(180deg, var(--paper) 0%, var(--subtle-bg) 100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .about-feature,
+    .about-feature .feature-icon {
+        transition: none;
+    }
+}
+
 
 
