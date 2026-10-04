@@ -6087,6 +6087,75 @@ div[id] {
 }
 
 @media (max-width: 700px) {
+    /* Compact utility bar: one tidy row, smaller type + icons */
+    .topbar {
+        font-size: 11px;
+    }
+
+    .topbar-inner {
+        min-height: 36px;
+        padding-block: 4px;
+        gap: 6px 14px;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .topbar-contact {
+        gap: 12px;
+        flex-wrap: nowrap;
+    }
+
+    .topbar-item {
+        gap: 6px;
+    }
+
+    .topbar-item i {
+        font-size: 10.5px;
+    }
+
+    .topbar-social {
+        gap: 7px;
+    }
+
+    .topbar-social a {
+        width: 26px;
+        height: 26px;
+        font-size: 11px;
+    }
+
+    /* Hero label becomes a dark, glassy chip so no white card sits on the photo */
+    .visual-label {
+        left: 12px;
+        right: auto;
+        top: 12px;
+        bottom: auto;
+        padding: 8px 12px 8px 8px;
+        gap: 9px;
+        background: rgba(9, 38, 29, 0.6);
+        -webkit-backdrop-filter: blur(8px);
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+    }
+
+    .visual-label strong {
+        color: #f2fff9;
+        font-size: 11px;
+    }
+
+    .visual-label small {
+        display: none;
+    }
+
+    .label-spark {
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+        background: rgba(168, 230, 201, 0.18);
+        color: #a8e6c9;
+    }
+
+    /* Footer */
     .footer-newsletter {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -6116,18 +6185,23 @@ div[id] {
 }
 
 @media (max-width: 620px) {
-    .topbar-inner {
-        justify-content: center;
-        gap: 8px 16px;
-    }
-
     .topbar-social-label,
     .topbar-phone {
         display: none;
     }
 
     .topbar-contact {
-        gap: 14px;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    .topbar-loc {
+        display: none;
+    }
+
+    .topbar-inner {
+        justify-content: center;
     }
 }
 
